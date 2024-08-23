@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Response and Containment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .slide {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007acc;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .case-study, .interactive, .tips, .additional-resources {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 6px solid #007acc;
+            margin: 50px auto;
+        }
+        .discussion {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-left: 6px solid #ff9800;
+            margin: 20px 0;
+        }
+        .question {
+            background-color: #eaf4e2;
+            padding: 15px;
+            border-left: 6px solid #4caf50;
+            margin: 20px 0;
+        }
+        .quote {
+            font-style: italic;
+            margin: 15px 0;
+            color: #555;
+        }
+  	.navigation {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            text-align: center;
+	}
+        .navigation:hover {
+            background-color: #005f8c;
+	}
+
+	.button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;	
+        }
+	.button:hover {
+            background-color: #2980b9;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title Slide -->
+    <div class="slide">
+        <h1>Incident Response and Containment</h1>
+        <h2>Effective Management of Social Engineering Attacks</h2>
+    </div>
+
+    <!-- Slide 2: Objective -->
+    <div class="slide">
+        <h2>Introduction</h2>
+        <p>
+            This module will train employees on how to respond to and contain a suspected social engineering attack. 
+            By understanding the correct procedures, employees can minimise the damage caused by an attack and help the organisation recover more quickly.
+        </p>
+    </div>
+
+    <!-- Slide 3: Step-by-Step Incident Response Procedures -->
+    <div class="slide">
+        <h2>Step-by-Step Incident Response Procedures</h2>
+        <p>Responding to a social engineering attack requires a clear, methodical approach. Below are the key steps to follow when a potential incident is detected:</p>
+        <ul>
+            <li><strong>1. Detection and Identification:</strong> Identify the signs of a potential social engineering attack, such as unusual requests for sensitive information or unauthorised access attempts.</li>
+            <li><strong>2. Reporting:</strong> Immediately report the suspected incident to the IT/security team. Ensure that all relevant details are communicated, including the nature of the attack and any actions taken so far.</li>
+            <li><strong>3. Containment:</strong> Take immediate steps to contain the breach. This might involve isolating affected systems, disconnecting from the network, or disabling compromised accounts.</li>
+            <li><strong>4. Eradication:</strong> Work with the IT/security team to remove the threat from the environment. This might include removing malware, closing backdoors, or patching vulnerabilities.</li>
+            <li><strong>5. Recovery:</strong> Restore affected systems to normal operations. This may involve restoring data from backups, re-enabling accounts, and monitoring for any signs of further compromise.</li>
+            <li><strong>6. Documentation:</strong> Document the incident in detail, including the attack vectors, response actions, and lessons learned. This will help improve future responses and strengthen security policies.</li>
+        </ul>
+        <div class="discussion">
+            <h3>Interactive Activity: Incident Response Simulation</h3>
+            <p>Consider a scenario where you receive an email from what appears to be a trusted vendor, asking for access to sensitive company data. After providing the information, you realise it was a phishing attempt. What steps should you take immediately?</p>
+            <ul>
+                <li>Report the incident to the IT/security team.</li>
+                <li>Contain the breach by disconnecting from the network if necessary.</li>
+                <li>Assist the IT/security team in investigating the incident and identifying the attack's entry point.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 4: Isolation and Investigation of Compromised Systems -->
+    <div class="slide">
+        <h2>Isolation and Investigation of Compromised Systems</h2>
+        <p>When a system is suspected to be compromised during a social engineering attack, immediate isolation is crucial to prevent the spread of the attack. Here's how to handle this step:</p>
+        <ul>
+            <li><strong>1. Immediate Isolation:</strong> Disconnect the affected system from the network to prevent the attacker from accessing other systems or data.</li>
+            <li><strong>2. Detailed Investigation:</strong> Work with the IT/security team to conduct a thorough investigation. This includes checking logs, identifying the scope of the compromise, and understanding how the attack was carried out.</li>
+            <li><strong>3. Forensic Analysis:</strong> Perform forensic analysis to gather evidence that can help trace the attacker and understand the techniques used. This information is crucial for preventing future attacks.</li>
+        </ul>
+        <div class="discussion">
+            <h3>Case Study: Containing a Compromised System</h3>
+            <p>A financial institution experienced a breach where attackers gained access to a critical server. By quickly isolating the server from the network, the IT team was able to prevent the attackers from accessing additional systems and data. The investigation revealed that the attackers had exploited a phishing email to gain initial access.</p>
+            <p><strong>Lessons Learned:</strong> Swift isolation is essential in limiting the damage caused by a breach. Detailed investigation and forensic analysis can provide valuable insights for strengthening defences.</p>
+        </div>
+    </div>
+
+    <!-- Slide 5: Coordinating with Other Departments -->
+    <div class="slide">
+        <h2>Coordinating with Other Departments</h2>
+        <p>Effective incident response requires collaboration across multiple departments. Here's how to ensure a coordinated effort:</p>
+        <ul>
+            <li><strong>1. Communication:</strong> Establish clear lines of communication between the IT/security team and other relevant departments, such as legal, HR, and public relations.</li>
+            <li><strong>2. Role Assignment:</strong> Assign specific roles and responsibilities to each department to ensure a coordinated and efficient response. This includes defining who will handle communication with external parties, such as customers or regulators.</li>
+            <li><strong>3. Joint Response Planning:</strong> Conduct joint response planning exercises to ensure all departments understand their roles in the event of an attack. This helps prevent confusion and delays during a real incident.</li>
+        </ul>
+        <div class="discussion">
+            <h3>Interactive Activity: Departmental Coordination Exercise</h3>
+            <p>Imagine that your company has just experienced a social engineering attack that has compromised sensitive customer data. As part of the response team, how would you coordinate with the following departments?</p>
+            <ul>
+                <li><strong>Legal:</strong> Ensure compliance with data breach notification laws and regulations.</li>
+                <li><strong>HR:</strong> Manage internal communications and employee-related issues arising from the breach.</li>
+                <li><strong>Public Relations:</strong> Handle external communications to protect the company’s reputation and inform stakeholders.</li>
+            </ul>
+        </div>
+        <div class="quote">
+            "Incident response is not just an IT issue; it's a company-wide responsibility. Effective communication and coordination are key to managing the impact of a security breach."
+        </div>
+    </div>
+
+    <!-- Slide 6: Conclusion -->
+    <div class="slide">
+        <h2>Conclusion</h2>
+        <p>
+            Responding to a social engineering attack requires a structured approach that involves not just IT but the entire organisation. By following step-by-step incident response procedures, isolating and investigating compromised systems, and coordinating with other departments, organisations can effectively manage and contain the damage caused by such attacks.
+        </p>
+        <p>
+            Regular training and simulations are crucial to ensure that all employees understand their roles in incident response and are prepared to act quickly and effectively. Remember, the success of incident response efforts depends on timely action, clear communication, and thorough investigation.
+        </p>
+        <p>
+        <p>
+            As you move forward, remember that being prepared is the best defence against social engineering attacks. Regularly review and update your incident response plans, conduct training exercises with all relevant departments, and stay informed about the latest threats and response strategies.
+        </p>
+        <p>
+            By fostering a culture of security awareness and preparedness, your organisation will be better equipped to respond to incidents, minimise damage, and recover more quickly from any security breaches.
+        </p>
+        <p>
+            Thank you for your attention, and continue to prioritise security in your daily operations.
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+       <a href="Deep_Dive_into_Tactics.html"><button class="button">Previous</button></a>
+        <a href="Technical_Safeguards.html"><button class="button">Next</button></a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Social Engineering Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .slide {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007acc;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .case-study, .interactive, .tips, .additional-resources {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 6px solid #007acc;
+            margin: 50px auto;
+        }
+        .discussion {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-left: 6px solid #ff9800;
+            margin: 20px 0;
+        }
+        .question {
+            background-color: #eaf4e2;
+            padding: 15px;
+            border-left: 6px solid #4caf50;
+            margin: 20px 0;
+        }
+        .quote {
+            font-style: italic;
+            margin: 15px 0;
+            color: #555;
+        }
+   	.navigation {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            text-align: center;
+	}
+        .navigation:hover {
+            background-color: #005f8c;
+	}
+
+	.button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;	
+        }
+	.button:hover {
+            background-color: #2980b9;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title Slide -->
+    <div class="slide">
+        <h1>Advanced Social Engineering Techniques</h1>
+        <h2>Deep Dive into Tactics</h2>
+    </div>
+
+    <!-- Slide 2: Introduction -->
+    <div class="slide">
+        <h2>Introduction</h2>
+        <p>
+            Welcome to the Advanced Social Engineering Techniques module. In this module, you will learn about:
+        </p>
+        <ul>
+            <li>Spear Phishing</li>
+            <li>Vishing and SMiShing</li>
+            <li>Deepfakes and their use in social engineering</li>
+        </ul>
+        <p>
+            Understanding these advanced techniques will help you identify and protect against sophisticated social engineering attacks that could threaten your organisation.
+        </p>
+    </div>
+
+    <!-- Slide 3: Spear Phishing -->
+    <div class="slide">
+        <h2>Spear Phishing</h2>
+        <p>Spear phishing is a highly targeted attempt to steal sensitive information such as login credentials or financial details from a specific individual, often using personalised information to make the attack more convincing.</p>
+        <ul>
+            <li><strong>Personalised Attacks:</strong> Attackers often use details such as the target's name, job title, or recent activities to make the phishing email appear legitimate.</li>
+            <li><strong>High-Value Targets:</strong> Spear phishing often targets high-profile individuals or specific departments, such as finance or HR, where access to sensitive information is likely.</li>
+        </ul>
+        <div class="discussion">
+            <h3>Interactive Activity: Identifying Spear Phishing</h3>
+            <p>You receive an email from what appears to be your company's CFO asking you to process a wire transfer. The email includes details about a recent project you worked on together. Before taking any action, consider:</p>
+            <ul>
+                <li>Is the request consistent with previous communications from the CFO?</li>
+                <li>Does the email address match the official company email domain?</li>
+                <li>Are there any suspicious links or attachments?</li>
+            </ul>
+        </div>
+        <div class="quote">
+            "Phishing attacks are becoming increasingly sophisticated, targeting even the most security-conscious organisations. Constant vigilance and continuous training are essential to staying ahead of these threats."
+        </div>
+    </div>
+
+    <!-- Slide 4: Vishing and SMiShing -->
+    <div class="slide">
+        <h2>Vishing and SMiShing</h2>
+        <p>Vishing (voice phishing) and SMiShing (SMS phishing) involve attackers using phone calls or text messages to deceive individuals into providing confidential information, such as login credentials or financial details.</p>
+        <ul>
+            <li><strong>Vishing:</strong> Attackers may spoof caller ID to appear as a trusted source, like a bank or IT support.</li>
+            <li><strong>SMiShing:</strong> Attackers send text messages that appear to be from reputable organisations, urging the recipient to click on a malicious link or call a fake customer service number.</li>
+        </ul>
+        <div class="discussion">
+            <h3>Interactive Activity: Recognising Vishing and SMiShing</h3>
+            <p>You receive the following text message:</p>
+            <blockquote>"[Bank Name]: Your account has been locked due to suspicious activity. Please click the link below to verify your identity and restore access. [Link]"</blockquote>
+            <p><strong>Consider the following:</strong></p>
+            <ul>
+                <li>Does your bank typically communicate with you via text message?</li>
+                <li>Is there a sense of urgency that pushes you to act quickly?</li>
+                <li>Is the link provided in the message a legitimate URL, or does it seem suspicious?</li>
+            </ul>
+        </div>
+        <div class="quote">
+            "Never provide personal or financial information in response to an unsolicited phone call or text message. Always verify the request through a trusted channel."
+        </div>
+    </div>
+
+    <!-- Slide 5: Deepfakes and Social Engineering -->
+    <div class="slide">
+        <h2>Deepfakes and Social Engineering</h2>
+        <p>Deepfakes are synthetic media where a person in an existing image or video is replaced with someone else's likeness. This technology is increasingly being used in social engineering attacks to create convincing, yet fake, videos and audio recordings.</p>
+        <ul>
+            <li><strong>Impersonation:</strong> Deepfakes can be used to impersonate executives, public figures, or anyone whose likeness is available online.</li>
+            <li><strong>Deceptive Actions:</strong> These fake videos or audio recordings can be used to deceive employees into taking harmful actions, such as transferring funds or sharing sensitive information.</li>
+        </ul>
+        <div class="discussion">
+            <h3>Interactive Activity: Identifying Deepfakes</h3>
+            <p>You receive a video message from your CEO instructing you to transfer funds to a new vendor account. The video looks convincing, but before taking any action, consider the following:</p>
+            <ul>
+                <li>Is the request consistent with previous communications from the CEO?</li>
+                <li>Do the CEO's facial expressions, voice, and background look natural?</li>
+                <li>Is there a way to verify the request by contacting the CEO or their office directly through a trusted channel?</li>
+            </ul>
+        </div>
+        <div class="quote">
+            "High-level requests involving financial transactions should always be verified through multiple channels. Deepfake technology makes this verification even more crucial."
+        </div>
+    </div>
+
+    <!-- Slide 6: Additional Resources -->
+    <div class="slide">
+        <h2>Additional Resources</h2>
+        <p>To further your understanding of deepfakes and their impact on cybersecurity, explore the following resources:</p>
+        <ul>
+            <li><a href="https://www.futureofprivacy.org/" target="_blank" style="color: #007acc;">Future of Privacy Forum</a> - Insights on privacy and the ethical implications of deepfake technology.</li>
+            <li><a href="https://www.cybersecurity-insiders.com/" target="_blank" style="color: #007acc;">Cybersecurity Insiders</a> - Latest news and case studies on cybersecurity threats, including deepfakes.</li>
+            <li><a href="https://www.technologyreview.com/" target="_blank" style="color: #007acc;">MIT Technology Review on Deepfakes</a> - Articles on the latest developments in deepfake technology.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 7: Conclusion -->
+    <div class="slide">
+        <h2>Conclusion</h2>
+        <p>
+            Social engineering attacks are becoming increasingly sophisticated, leveraging advanced technologies like spear phishing, vishing, SMiShing, and deepfakes to deceive even the most vigilant individuals and organisations. By understanding these tactics and recognising the warning signs, you can better protect yourself and your organisation from falling victim to these types of attacks.
+        </p>
+        <p>
+            It is crucial to maintain a high level of skepticism and always verify requests for sensitive information, especially when they involve financial transactions or access to confidential data. Regular training and awareness programs are key to staying ahead of these evolving threats.
+        </p>
+        <p>
+            As you move forward, continue to educate yourself and your colleagues on the latest social engineering techniques and best practices for cybersecurity. Together, we can create a more secure environment that is resilient against even the most advanced social engineering threats.
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="module2.html"><button class="button">start the module again</button></a>
+        <a href="Effective_Management.html"><button class="button">Next</button></a>
+    </div>
+
+</body>
+</html>

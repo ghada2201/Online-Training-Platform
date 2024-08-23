@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognizing Social Engineering Tactics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .slide {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007acc;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .example {
+            background-color: #e7f3ff;
+            padding: 10px;
+            border-left: 4px solid #007acc;
+            margin: 15px 0;
+        }
+        .tip {
+            background-color: #eaf4e2;
+            padding: 10px;
+            border-left: 4px solid #4caf50;
+            margin: 15px 0;
+        }
+ 	.navigation {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            text-align: center;
+	}
+        .navigation:hover {
+            background-color: #005f8c;
+	}
+
+	.button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;	
+        }
+	.button:hover {
+            background-color: #2980b9;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title Slide -->
+    <div class="slide">
+        <h1>Recognising Social Engineering Tactics</h1>
+        <h2>Module 1.2</h2>
+    </div>
+
+    <!-- Slide 2: Phishing Email Characteristics -->
+    <div class="slide">
+        <h2>Phishing Email Characteristics</h2>
+        <p>Phishing is one of the most common social engineering tactics, where attackers impersonate legitimate entities to trick you into providing sensitive information. Here’s how you can recognise phishing emails:</p>
+        <ul>
+            <li><strong>Suspicious Links:</strong> Links that don't match the legitimate URL of the supposed sender. Always hover over links to see the actual URL before clicking.</li>
+            <div class="example">
+                <p><strong>Example:</strong> You receive an email from "support@paypa1.com" asking you to verify your account. The link provided leads to "http://fakewebsite.com" instead of "https://paypal.com."</p>
+            </div>
+            <li><strong>Urgent Language:</strong> Phrases like "Your account will be suspended," "Act now," or "Immediate action required" are often used to create a sense of urgency.</li>
+            <div class="example">
+                <p><strong>Example:</strong> "Your account has been compromised. Click here to change your password immediately or risk losing access."</p>
+            </div>
+            <li><strong>Unusual Sender:</strong> Emails from unrecognised or suspicious email addresses that don’t match the legitimate organisation. Attackers may slightly alter email addresses to mimic legitimate ones.</li>
+            <div class="example">
+                <p><strong>Example:</strong> An email claiming to be from your bank comes from "customer-support@bancofamerica.com" instead of "customer-support@bankofamerica.com."</p>
+            </div>
+            <li><strong>Attachments:</strong> Be cautious with unsolicited attachments, especially those with executable files (.exe, .zip), as they could contain malware.</li>
+            <div class="example">
+                <p><strong>Example:</strong> An email from an unknown sender includes an attachment named "invoice.zip." This could be malware designed to infect your system when opened.</p>
+            </div>
+        </ul>
+        <div class="tip">
+            <p><strong>Tip:</strong> Always verify unexpected emails by contacting the sender through official channels. Never click on links or download attachments from suspicious emails.</p>
+        </div>
+    </div>
+
+    <!-- Slide 3: Pretexting Warning Signs -->
+    <div class="slide">
+        <h2>Pretexting Warning Signs</h2>
+        <p>Pretexting involves creating a fabricated scenario to gain trust and obtain information. Here’s how to recognise it:</p>
+        <ul>
+            <li><strong>Inconsistencies in Story:</strong> The attacker may have incomplete or incorrect information, which can be a red flag.</li>
+            <div class="example">
+                <p><strong>Example:</strong> A caller claims to be from your company’s IT department but cannot provide basic details about your department or role.</p>
+            </div>
+            <li><strong>Pressure Tactics:</strong> The attacker may rush the victim to make a decision quickly, trying to prevent them from verifying the request.</li>
+            <div class="example">
+                <p><strong>Example:</strong> "We need your login credentials right now to fix a critical issue. If we don’t get them in the next five minutes, the system will go down."</p>
+            </div>
+            <li><strong>Requests for Unusual Information:</strong> Be wary of requests for details that wouldn’t typically be required for the stated purpose.</li>
+            <div class="example">
+                <p><strong>Example:</strong> An HR representative asks for your Social Security number over the phone to "update your employee profile," which is not standard procedure.</p>
+            </div>
+        </ul>
+        <div class="tip">
+            <p><strong>Tip:</strong> Always verify the identity of the person requesting information, especially if the request is unusual. Use known contact information rather than the contact details provided in the request.</p>
+        </div>
+    </div>
+
+    <!-- Slide 4: Physical Security Red Flags -->
+    <div class="slide">
+        <h2>Physical Security Red Flags</h2>
+        <p>Physical security breaches, such as tailgating and baiting, can lead to unauthorised access to sensitive areas or systems. Here’s how to recognise these tactics:</p>
+        <ul>
+            <li><strong>Unknown Individuals:</strong> Be cautious of people who follow employees into secure areas without proper credentials. This could be a tailgating attempt.</li>
+            <div class="example">
+                <p><strong>Example:</strong> Someone you don’t recognise tries to enter a restricted area by saying, "I forgot my badge, can you let me in?"</p>
+            </div>
+            <li><strong>Unexpected Freebies:</strong> Suspicious items like USB drives left in common areas might be part of a baiting attempt. Never plug them into your computer.</li>
+            <div class="example">
+                <p><strong>Example:</strong> A USB drive labeled "Confidential Payroll Information" is found in the break room. It could be a trap designed to exploit curiosity.</p>
+            </div>
+        </ul>
+        <div class="tip">
+            <p><strong>Tip:</strong> Never allow someone to enter a secure area without proper identification, and report any suspicious items or behaviour to security immediately.</p>
+        </div>
+    </div>
+
+    <!-- Slide 5: Responding to Social Engineering Attempts -->
+    <div class="slide">
+        <h2>Responding to Social Engineering Attempts</h2>
+        <p>If you suspect you are being targeted by a social engineering attempt, it is crucial to act with caution:</p>
+        <ul>
+            <li><strong>Do Not Rush:</strong> Take your time to verify the legitimacy of the request or communication. Social engineers often rely on creating a sense of urgency.</li>
+            <li><strong>Verify the Source:</strong> Use official contact methods to verify the request, such as calling the organisation directly using a number you know is legitimate.</li>
+            <li><strong>Report Suspicious Activity:</strong> Immediately report any suspicious communications or behaviours to your IT or security team. Early reporting can help prevent potential breaches.</li>
+        </ul>
+        <div class="tip">
+            <p><strong>Tip:</strong> Keep a list of official contact numbers for your organisation’s key departments (IT, HR, etc.) so you can quickly verify any unusual requests.</p>
+        </div>
+    </div>
+
+    <!-- Slide 6: Conclusion -->
+    <div class="slide">
+        <h2>Conclusion</h2>
+        <p>
+            Recognising social engineering tactics is the first step in defending against them. By being aware of the common signs of phishing, pretexting, and other social engineering strategies, you can protect yourself and your organisation from these deceptive attacks.
+        </p>
+        <p>
+            Remember, social engineers exploit trust and human nature. Stay vigilant, question unusual requests, and report any suspicious activities to your security team.
+        </p>
+    </div>
+
+<div class="navigation">
+ 	<a href="social_engineering_module.html"><button class="button">Previous</button></a>
+        <a href="case_studies_real_world_scenarios.html"><button class="button">Next</button></a>
+    </div>
+</body>
+</html>

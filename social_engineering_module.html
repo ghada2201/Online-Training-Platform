@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Social Engineering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .slide {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007acc;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .example {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #007acc;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .example-title {
+            font-weight: bold;
+            color: #007acc;
+        }
+	.navigation {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            text-align: center;
+	}
+        .navigation:hover {
+            background-color: #005f8c;
+	}
+
+	.button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;	
+        }
+	.button:hover {
+            background-color: #2980b9;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title Slide -->
+    <div class="slide">
+        <h1>Introduction to Social Engineering</h1>
+        <h2>Module 1.1: What is Social Engineering?</h2>
+    </div>
+
+    <!-- Slide 2: Definition of Social Engineering -->
+    <div class="slide">
+        <h2>What is Social Engineering?</h2>
+        <p>
+            Social Engineering is the psychological manipulation of people into performing actions 
+            or divulging confidential information. Unlike traditional hacking, which targets technical 
+            vulnerabilities, social engineering exploits human vulnerabilities. These attacks rely on 
+            the trust, curiosity, fear, and even the helpfulness of individuals to gain unauthorised access 
+            to systems or sensitive data.
+        </p>
+        <p>
+            Social engineering can take many forms, including deceptive emails, phone calls, or even 
+            face-to-face interactions. It is often the first step in a more extensive cyber attack, aiming to 
+            gather information that can be used to penetrate more secure systems.
+        </p>
+        <div class="example">
+            <p class="example-title">Example:</p>
+            <p>
+                An attacker calls an employee, pretending to be from the IT department, and claims there 
+                is an urgent issue with their account. The attacker asks the employee to provide their 
+                login credentials to resolve the issue. Trusting the caller, the employee complies, giving 
+                the attacker access to the company’s systems.
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 3: Common Types of Social Engineering Attacks -->
+    <div class="slide">
+        <h2>Common Types of Social Engineering Attacks</h2>
+        <ul>
+            <li><strong>Phishing:</strong> A broad attempt to steal sensitive information via email, messages, or fake websites.</li>
+            <div class="example">
+                <p class="example-title">Example:</p>
+                <p>An email appears to be from your bank, asking you to click a link and confirm your account details. The link leads to a fake website that captures your login information.</p>
+            </div>
+            <li><strong>Spear Phishing:</strong> A more targeted attack, where the attacker tailors the message to a specific individual or organisation, often using personal details to make it more convincing.</li>
+            <div class="example">
+                <p class="example-title">Example:</p>
+                <p>The CEO of a company receives an email that appears to be from the CFO, asking for an urgent transfer of funds. The email is well-crafted and includes references to specific projects or recent conversations.</p>
+            </div>
+            <li><strong>Pretexting:</strong> An attacker creates a fabricated scenario (a pretext) to engage the victim and extract information.</li>
+            <div class="example">
+                <p class="example-title">Example:</p>
+                <p>An attacker calls a help desk, pretending to be a high-level executive who has forgotten their password. The help desk, believing the story, resets the password and gives it to the attacker.</p>
+            </div>
+            <li><strong>Baiting:</strong> An attack that involves offering something enticing (like free software or a USB drive) to trick the victim into compromising their security.</li>
+            <div class="example">
+                <p class="example-title">Example:</p>
+                <p>A USB drive labeled "Confidential Salary Information" is left in a common area. Curious employees pick it up and plug it into their computer, unknowingly installing malware.</p>
+            </div>
+            <li><strong>Tailgating:</strong> An attacker physically follows an authorised person into a restricted area without proper credentials.</li>
+            <div class="example">
+                <p class="example-title">Example:</p>
+                <p>An unauthorised individual waits near the entrance of a secure facility and follows an employee through the door when they swipe their access card, gaining entry without detection.</p>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Slide 4: Why Social Engineering is a Threat -->
+    <div class="slide">
+        <h2>Why is Social Engineering a Threat?</h2>
+        <p>
+            Social engineering is a significant threat because it bypasses many traditional security measures 
+            by targeting human behaviour. While firewalls, antivirus software, and encryption can protect against 
+            many cyber threats, social engineering attacks exploit the natural trust and curiosity of individuals.
+        </p>
+        <p>
+            The consequences of a successful social engineering attack can be severe, including data breaches, 
+            financial loss, and repetitional damage. For example, if an attacker gains access to login credentials 
+            through a phishing attack, they may be able to access sensitive company data, transfer funds, or 
+            even deploy malware across the network.
+        </p>
+        <div class="example">
+            <p class="example-title">Real-World Impact:</p>
+            <p>
+                In 2016, a major US-based company fell victim to a spear-phishing attack. An employee received 
+                an email that appeared to be from the CEO, requesting a large wire transfer. Believing the email 
+                to be legitimate, the employee authorised the transfer, resulting in the company losing millions of dollars.
+            </p>
+        </div>
+        <p>
+            Awareness and training are essential components of any defence strategy against social engineering. 
+            By educating employees on the tactics used by attackers and encouraging a culture of skepticism and 
+            verification, organisations can significantly reduce the risk of falling victim to these types of attacks.
+        </p>
+    </div>
+
+    <!-- Slide 5: Conclusion -->
+    <div class="slide">
+        <h2>Conclusion</h2>
+        <p>
+            Understanding what social engineering is and the different forms it can take is crucial for maintaining 
+            security within an organisation. Through awareness and proper training, we can better defend against 
+            these types of attacks and protect our sensitive information.
+        </p>
+        <p>
+            Remember, attackers are always looking for the weakest link in the security chain. By staying vigilant 
+            and following best practices, you can ensure that you are not that link.
+        </p>
+    </div>
+<div class="navigation">
+	<a href="module1.html"><button class="button">start the module again</button></a>
+
+        <a href="recognising_social_engineering_tactics.html"><button class="button">Next</button></a>
+
+    </div>
+
+</body>
+</html>

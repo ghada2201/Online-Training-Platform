@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessment - Advanced Phishing Simulations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .question {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .choices label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .nav-button:hover {
+            background-color: #005f8c;
+        }
+        .submit-button {
+            background-color: #28a745;
+            color: white;
+        }
+        .submit-button:hover {
+            background-color: #218838;
+        }
+	.button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;	
+        }
+	.button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Technical Assessment - Advanced Phishing Simulations</h1>
+
+    <!-- Section 1: Introduction -->
+    <div id="section1" class="section active">
+        <h2>Welcome to the Assessment</h2>
+        <p>This assessment will test your knowledge on advanced phishing simulations and related concepts covered in the training. Click "Next" to begin.</p>
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(2)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 2: Questions 1-5 -->
+    <div id="section2" class="section">
+        <div class="question">
+            <h3>1. Identifying a Phishing Email</h3>
+            <p>You receive an email from your company's CFO asking you to process a large payment immediately. The email includes a link to an invoice and urges you to act quickly. What is your first step?</p>
+            <div class="choices">
+                <label><input type="radio" name="q1" value="a"> a) Click on the link and review the invoice details.</label>
+                <label><input type="radio" name="q1" value="b"> b) Contact the CFO directly using a known communication method to verify the request.</label>
+                <label><input type="radio" name="q1" value="c"> c) Forward the email to your colleagues for their opinion.</label>
+                <label><input type="radio" name="q1" value="d"> d) Ignore the email if you don’t recognise the sender's email address.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Suspicious Link in an Email</h3>
+            <p>You receive an email from a vendor you've worked with before, asking you to update your payment information. The email contains a link to a form. How do you proceed?</p>
+            <div class="choices">
+                <label><input type="radio" name="q2" value="a"> a) Click the link and update the payment information as requested.</label>
+                <label><input type="radio" name="q2" value="b"> b) Reply to the email asking for more details before clicking the link.</label>
+                <label><input type="radio" name="q2" value="c"> c) Contact the vendor through a verified phone number to confirm the request before taking any action.</label>
+                <label><input type="radio" name="q2" value="d"> d) Delete the email immediately and report it to your IT team.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Phishing Simulation Feedback</h3>
+            <p>During a phishing simulation, you fail to recognise a phishing attempt and click on a malicious link. What should you do next?</p>
+            <div class="choices">
+                <label><input type="radio" name="q3" value="a"> a) Notify your IT/security team immediately about the incident.</label>
+                <label><input type="radio" name="q3" value="b"> b) Ignore it since it was just a simulation and didn’t cause any harm.</label>
+                <label><input type="radio" name="q3" value="c"> c) Change your password and monitor your accounts for suspicious activity.</label>
+                <label><input type="radio" name="q3" value="d"> d) Attempt to remove the malicious software yourself using an antivirus program.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Unexpected IT Support Request</h3>
+            <p>An email claiming to be from your company's IT department asks you to reset your password immediately to comply with a new security policy. The email includes a link to a password reset page. What should you do?</p>
+            <div class="choices">
+                <label><input type="radio" name="q4" value="a"> a) Click the link and reset your password as instructed.</label>
+                <label><input type="radio" name="q4" value="b"> b) Forward the email to your colleagues to ask if they received the same request.</label>
+                <label><input type="radio" name="q4" value="c"> c) Contact the IT department directly using a known internal number to verify the request.</label>
+                <label><input type="radio" name="q4" value="d"> d) Ignore the email and continue using your current password.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Phishing Scenario Response</h3>
+            <p>After identifying a suspicious email, what is the most appropriate way to handle it?</p>
+            <div class="choices">
+                <label><input type="radio" name="q5" value="a"> a) Delete the email immediately without taking further action.</label>
+                <label><input type="radio" name="q5" value="b"> b) Forward the email to your IT/security team for further investigation.</label>
+                <label><input type="radio" name="q5" value="c"> c) Reply to the email asking the sender if it's legitimate.</label>
+                <label><input type="radio" name="q5" value="d"> d) Move the email to your spam folder to prevent further issues.</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(1)">Previous</button>
+            <button class="nav-button" onclick="navigateToSection(3)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 3: Questions 6-10 -->
+    <div id="section3" class="section">
+        <div class="question">
+            <h3>6. Vendor Invoice Scam</h3>
+            <p>You receive an invoice from a familiar vendor, but the payment details have changed, and the email seems slightly off. How should you respond?</p>
+            <div class="choices">
+                <label><input type="radio" name="q6" value="a"> a) Pay the invoice as instructed since it's from a known vendor.</label>
+                <label><input type="radio" name="q6" value="b"> b) Contact the vendor using a known phone number to verify the invoice details before making payment.</label>
+                <label><input type="radio" name="q6" value="c"> c) Ask your finance team to process the payment as usual.</label>
+                <label><input type="radio" name="q6" value="d"> d) Ignore the email since it seems suspicious.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Deepfake Phishing Threat</h3>
+            <p>You receive a video message from your CEO requesting an urgent transfer of funds to a new account. The video looks and sounds real. What should you do?</p>
+            <div class="choices">
+                <label><input type="radio" name="q7" value="a"> a) Comply with the request immediately since it appears to be from the CEO.</label>
+                <label><input type="radio" name="q7" value="b"> b) Verify the request by contacting the CEO or their office through a different communication channel before taking any action.</label>
+                <label><input type="radio" name="q7" value="c"> c) Forward the video to your finance team to process the transfer.</label>
+                <label><input type="radio" name="q7" value="d"> d) Delete the message since it could be a scam.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Phishing Email Indicators</h3>
+            <p>You receive an email from a colleague asking you to review an attached document. The email seems rushed and includes several spelling mistakes. What should you be most concerned about?</p>
+            <div class="choices">
+                <label><input type="radio" name="q8" value="a"> a) The spelling mistakes indicate that the email may not be legitimate.</label>
+                <label><input type="radio" name="q8" value="b"> b) The attachment might contain malicious software designed to infect your computer.</label>
+                <label><input type="radio" name="q8" value="c"> c) The email address appears correct, so there’s no need to worry.</label>
+                <label><input type="radio" name="q8" value="d"> d) The request seems typical, so it’s probably safe to open the attachment.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Reporting Phishing Attempts</h3>
+            <p>After identifying a phishing attempt, what is the most important reason to report it to your IT or security team?</p>
+            <div class="choices">
+                <label><input type="radio" name="q9" value="a"> a) To remove the email from your inbox.</label>
+                <label><input type="radio" name="q9" value="b"> b) To ensure that the phishing attempt is documented and to help protect others from falling victim to similar attacks.</label>
+                <label><input type="radio" name="q9" value="c"> c) To inform your colleagues of the phishing attempt.</label>
+                <label><input type="radio" name="q9" value="d"> d) To stop receiving similar emails in the future.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Urgent Requests in Phishing Emails</h3>
+            <p>An email you receive claims that your account will be suspended unless you update your credentials within 24 hours. The email includes a link to reset your password. How should you respond?</p>
+            <div class="choices">
+                <label><input type="radio" name="q10" value="a"> a) Click the link immediately to prevent your account from being suspended.</label>
+                <label><input type="radio" name="q10" value="b"> b) Ignore the email if it seems suspicious.</label>
+                <label><input type="radio" name="q10" value="c"> c) Contact your IT department directly to verify the legitimacy of the email before taking any action.</label>
+                <label><input type="radio" name="q10" value="d"> d) Reply to the email to ask for more time to update your credentials.</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(2)">Previous</button>
+            <button class="nav-button" onclick="navigateToSection(4)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 4: Questions 11-15 -->
+    <div id="section4" class="section">
+        <div class="question">
+            <h3>11. Protecting Sensitive Information</h3>
+            <p>During a phishing simulation, you receive an email requesting sensitive company information. The email looks legitimate, but you’re unsure. What should you do?</p>
+            <div class="choices">
+                <label><input type="radio" name="q11" value="a"> a) Provide the information since the email appears to be from a trusted source.</label>
+                <label><input type="radio" name="q11" value="b"> b) Verify the request by contacting the supposed sender through a different channel before providing any information.</label>
+                <label><input type="radio" name="q11" value="c"> c) Ignore the email to avoid the risk of sharing sensitive information.</label>
+                <label><input type="radio" name="q11" value="d"> d) Reply to the email asking why the information is needed.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. Identifying Social Engineering Tactics</h3>
+            <p>A colleague receives a phone call from someone claiming to be from IT support, asking for their login credentials to fix an issue. What should your colleague do?</p>
+            <div class="choices">
+                <label><input type="radio" name="q12" value="a"> a) Provide the credentials to resolve the issue quickly.</label>
+                <label><input type="radio" name="q12" value="b"> b) Hang up and report the call to your IT/security team.</label>
+                <label><input type="radio" name="q12" value="c"> c) Ask for more details about the issue before providing any information.</label>
+                <label><input type="radio" name="q12" value="d"> d) Transfer the call to another department to handle the issue.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Recognizing Phishing Red Flags</h3>
+            <p>Which of the following is a common red flag in phishing emails?</p>
+            <div class="choices">
+                <label><input type="radio" name="q13" value="a"> a) A sense of urgency, asking you to act quickly.</label>
+                <label><input type="radio" name="q13" value="b"> b) An unexpected request from a known contact.</label>
+                <label><input type="radio" name="q13" value="c"> c) Grammatical errors and awkward phrasing.</label>
+                <label><input type="radio" name="q13" value="d"> d) All of the above.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Handling Unexpected Attachments</h3>
+            <p>You receive an email from a colleague with an unexpected attachment and no explanation in the message. What should you do?</p>
+            <div class="choices">
+                <label><input type="radio" name="q14" value="a"> a) Open the attachment since it’s from a colleague.</label>
+                <label><input type="radio" name="q14" value="b"> b) Delete the email immediately to avoid any risk.</label>
+                <label><input type="radio" name="q14" value="c"> c) Reply to the email asking for more information about the attachment before opening it.</label>
+                <label><input type="radio" name="q14" value="d"> d) Forward the email to your IT department to scan the attachment for malware.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Responding to Phishing Simulations</h3>
+            <p>After completing a phishing simulation, what is the most important takeaway?</p>
+            <div class="choices">
+                <label><input type="radio" name="q15" value="a"> a) Identifying areas where you need to improve in recognising phishing attempts.</label>
+                <label><input type="radio" name="q15" value="b"> b) Learning how to better protect your credentials and sensitive information.</label>
+                <label><input type="radio" name="q15" value="c"> c) Understanding the importance of reporting phishing attempts to the appropriate team.</label>
+                <label><input type="radio" name="q15" value="d"> d) All of the above.</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(3)">Previous</button>
+            <button class="submit-button nav-button" onclick="submitQuiz()">Submit Assessment</button>
+        </div>
+    </div>
+
+    <!-- Section 5: Results -->
+    <div id="section5" class="section">
+        <h2>Assessment Results</h2>
+        <div id="results"></div>
+        <div class="navigation">
+            <button class="nav-button" onclick="location.reload()">Retake Assessment</button>
+        </div>
+    <div class="navigation">
+        <a href="module2.html"><button class="button">Start the Module Again</button></a>
+        <a href="module3.html"><button class="button">Go to Next Module</button></a>
+        <a href="home.html"><button class="button">Go Back to Home Page</button></a>
+    </div>
+    </div>
+
+    <script>
+        // Function to navigate between sections
+        function navigateToSection(sectionNumber) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('section' + sectionNumber).classList.add('active');
+        }
+
+        // Function to submit the assessment and display results
+        function submitQuiz() {
+            // Correct answers
+            const correctAnswers = {
+                q1: 'b',
+                q2: 'c',
+                q3: 'a',
+                q4: 'c',
+                q5: 'b',
+                q6: 'b',
+                q7: 'b',
+                q8: 'b',
+                q9: 'b',
+                q10: 'c',
+                q11: 'b',
+                q12: 'b',
+                q13: 'd',
+                q14: 'd',
+                q15: 'd'
+            };
+
+            // Calculate the score
+            let score = 0;
+            let totalQuestions = 15;
+            let resultDetails = '';
+
+            for (let question in correctAnswers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
+                    score++;
+                    resultDetails += `<p><strong>${question.toUpperCase()}:</strong> ✔ Correct. Your answer was <strong>${selectedAnswer.value}</strong>.</p>`;
+                } else {
+                    resultDetails += `<p><strong>${question.toUpperCase()}:</strong> ✘ Incorrect. Your answer was <strong>${selectedAnswer ? selectedAnswer.value : 'not answered'}</strong>. The correct answer is <strong>${correctAnswers[question]}</strong>.</p>`;
+                }
+            }
+
+            // Display the result
+            let percentage = (score / totalQuestions) * 100;
+            let resultText = `You scored ${score} out of ${totalQuestions}. That's ${percentage.toFixed(2)}%.`;
+
+            document.getElementById('results').innerHTML = `<p>${resultText}</p>${resultDetails}`;
+
+            // Navigate to results section
+            navigateToSection(5);
+        }
+    </script>
+
+
+
+</body>
+</html>

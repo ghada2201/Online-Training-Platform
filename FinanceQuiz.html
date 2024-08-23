@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Department Security Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .question {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .choices label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .nav-button:hover {
+            background-color: #005f8c;
+        }
+        .submit-button {
+            background-color: #28a745;
+            color: white;
+        }
+        .submit-button:hover {
+            background-color: #218838;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Finance Department Security Quiz</h1>
+
+    <!-- Section 1: Introduction -->
+    <div id="section1" class="section active">
+        <h2>Welcome to the Finance Department Security Quiz</h2>
+        <p>This quiz will test your knowledge on social engineering threats and best practices specific to the Finance department. Click "Next" to begin.</p>
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(2)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 2: Questions 1-3 -->
+    <div id="section2" class="section">
+        <div class="question">
+            <h3>1. What is the first step you should take if you receive a payment request from an unknown vendor?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q1" value="a"> a) Approve the payment immediately.</label>
+                <label><input type="radio" name="q1" value="b"> b) Verify the request by contacting the vendor using known contact details.</label>
+                <label><input type="radio" name="q1" value="c"> c) Ignore the request.</label>
+                <label><input type="radio" name="q1" value="d"> d) Forward the request to a colleague.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Which of the following is a red flag when reviewing financial transactions?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q2" value="a"> a) A vendor's bank account number has changed unexpectedly.</label>
+                <label><input type="radio" name="q2" value="b"> b) The transaction amount is higher than usual.</label>
+                <label><input type="radio" name="q2" value="c"> c) The payment request is marked as urgent.</label>
+                <label><input type="radio" name="q2" value="d"> d) All of the above.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. How often should you update your passwords for financial systems?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q3" value="a"> a) Every month.</label>
+                <label><input type="radio" name="q3" value="b"> b) Every six months.</label>
+                <label><input type="radio" name="q3" value="c"> c) Once a year.</label>
+                <label><input type="radio" name="q3" value="d"> d) Only when prompted by the system.</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(1)">Previous</button>
+            <button class="nav-button" onclick="navigateToSection(3)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 3: Questions 4-7 -->
+    <div id="section3" class="section">
+        <div class="question">
+            <h3>4. What should you do if you notice unusual activity in transaction logs?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q4" value="a"> a) Report it to IT/security immediately.</label>
+                <label><input type="radio" name="q4" value="b"> b) Wait to see if it happens again.</label>
+                <label><input type="radio" name="q4" value="c"> c) Attempt to reverse the transactions yourself.</label>
+                <label><input type="radio" name="q4" value="d"> d) Ignore it if the amounts are small.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Why is it important to verify payment requests, especially those marked as urgent?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q5" value="a"> a) To ensure that the request is legitimate and to prevent fraud.</label>
+                <label><input type="radio" name="q5" value="b"> b) To delay the payment as long as possible.</label>
+                <label><input type="radio" name="q5" value="c"> c) To avoid unnecessary work.</label>
+                <label><input type="radio" name="q5" value="d"> d) None of the above.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. What is multi-factor authentication (MFA) and why is it important for financial systems?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q6" value="a"> a) It is a method that requires more than one form of verification before granting access, adding an extra layer of security.</label>
+                <label><input type="radio" name="q6" value="b"> b) It is a backup password in case you forget your main one.</label>
+                <label><input type="radio" name="q6" value="c"> c) It allows you to access the system without using a password.</label>
+                <label><input type="radio" name="q6" value="d"> d) It is only used for logging in to email accounts.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Which action should be taken monthly to ensure the security of financial systems?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q7" value="a"> a) Conduct a full audit of access permissions.</label>
+                <label><input type="radio" name="q7" value="b"> b) Backup all financial data manually.</label>
+                <label><input type="radio" name="q7" value="c"> c) Change all user passwords.</label>
+                <label><input type="radio" name="q7" value="d"> d) None of the above.</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(2)">Previous</button>
+            <button class="nav-button" onclick="navigateToSection(4)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 4: Questions 8-10 -->
+    <div id="section4" class="section">
+        <div class="question">
+            <h3>8. What should you do if you receive an email requesting a payment to a new bank account?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q8" value="a"> a) Make the payment immediately to avoid delays.</label>
+                <label><input type="radio" name="q8" value="b"> b) Verify the request by contacting the requester through a known phone number before making any changes.</label>
+                <label><input type="radio" name="q8" value="c"> c) Ignore the email and wait for a follow-up.</label>
+                <label><input type="radio" name="q8" value="d"> d) Forward the email to a colleague.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. How should financial systems be protected when not in use?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q9" value="a"> a) Leave them open for convenience.</label>
+                <label><input type="radio" name="q9" value="b"> b) Log out and lock the workstation.</label>
+                <label><input type="radio" name="q9" value="c"> c) Minimize the window but keep the system running.</label>
+                <label><input type="radio" name="q9" value="d"> d) Close the application without logging out.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. What is the primary reason for conducting regular audits of access permissions?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q10" value="a"> a) To ensure that only authorized personnel have access to sensitive financial systems.</label>
+                <label><input type="radio" name="q10" value="b"> b) To keep track of employee activity.</label>
+                <label><input type="radio" name="q10" value="c"> c) To prepare for tax season.</label>
+                <label><input type="radio" name="q10" value="d"> d) To reduce the workload of the IT department.</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(3)">Previous</button>
+            <button class="submit-button nav-button" onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Section 5: Results -->
+    <div id="section5" class="section">
+        <h2>Quiz Results</h2>
+        <div id="results"></div>
+        <div class="navigation">
+            <button class="nav-button" onclick="location.reload()">Retake Quiz</button>
+        </div>
+  <div class="navigation">
+        <a href="module3.html"><button class="button">Start the module again</button></a>
+        <a href="module4.html"><button class="button">Go to next module</button></a>
+        <a href="home.html"><button class="button">Go Back to Home Page</button></a>
+    </div>
+    </div>
+
+    <script>
+        // Function to navigate between sections
+        function navigateToSection(sectionNumber) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('section' + sectionNumber).classList.add('active');
+        }
+
+        // Function to submit the quiz and display results
+        function submitQuiz() {
+            // Correct answers
+            const correctAnswers = {
+                q1: 'b',
+                q2: 'd',
+                q3: 'a',
+                q4: 'a',
+                q5: 'a',
+                q6: 'a',
+                q7: 'a',
+                q8: 'b',
+                q9: 'b',
+                q10: 'a'
+            };
+
+            // Calculate the score
+            let score = 0;
+            let totalQuestions = 10;
+            let resultDetails = '';
+
+            for (let question in correctAnswers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
+                    score++;
+                    resultDetails += `<p><strong>${question.toUpperCase()}:</strong> ✔ Correct. Your answer was <strong>${selectedAnswer.value}</strong>.</p>`;
+                } else {
+                    resultDetails += `<p><strong>${question.toUpperCase()}:</strong> ✘ Incorrect. Your answer was <strong>${selectedAnswer ? selectedAnswer.value : 'not answered'}</strong>. The correct answer is <strong>${correctAnswers[question]}</strong>.</p>`;
+                }
+            }
+
+            // Display the result
+            let percentage = (score / totalQuestions) * 100;
+            let resultText = `You scored ${score} out of ${totalQuestions}. That's ${percentage.toFixed(2)}%.`;
+
+            document.getElementById('results').innerHTML = `<p>${resultText}</p>${resultDetails}`;
+
+            // Navigate to results section
+            navigateToSection(5);
+        }
+    </script>
+
+</body>
+</html>
+

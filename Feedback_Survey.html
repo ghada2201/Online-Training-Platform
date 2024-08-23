@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Program Effectiveness and Feedback Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .submit-button {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Training Program Effectiveness and Feedback Survey</h1>
+
+    <form action="submit_survey.php" method="post">
+
+        <h2>1. Overall Satisfaction</h2>
+        <label>How satisfied are you with the overall quality of the training program?</label>
+        <select name="satisfaction" required>
+            <option value="Very satisfied">Very satisfied</option>
+            <option value="Satisfied">Satisfied</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Dissatisfied">Dissatisfied</option>
+            <option value="Very dissatisfied">Very dissatisfied</option>
+        </select>
+
+        <h2>2. Training Content Relevance</h2>
+        <label>How relevant was the training content to your job role?</label>
+        <select name="relevance" required>
+            <option value="Highly relevant">Highly relevant</option>
+            <option value="Relevant">Relevant</option>
+            <option value="Somewhat relevant">Somewhat relevant</option>
+            <option value="Not relevant">Not relevant</option>
+        </select>
+
+        <h2>3. Knowledge Retention</h2>
+        <label>How confident do you feel in your ability to apply what you learned in the training to your daily work?</label>
+        <select name="confidence" required>
+            <option value="Very confident">Very confident</option>
+            <option value="Confident">Confident</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Slightly confident">Slightly confident</option>
+            <option value="Not confident">Not confident</option>
+        </select>
+
+        <h2>4. Phishing Awareness</h2>
+        <label>After completing the training, how well do you feel you can recognize a phishing email?</label>
+        <select name="phishing_awareness" required>
+            <option value="Extremely well">Extremely well</option>
+            <option value="Very well">Very well</option>
+            <option value="Somewhat well">Somewhat well</option>
+            <option value="Not very well">Not very well</option>
+            <option value="Not at all">Not at all</option>
+        </select>
+
+        <h2>5. Training Delivery</h2>
+        <label>Please rate the effectiveness of the training delivery (e.g., format, pace, instructor):</label>
+        <select name="delivery" required>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select>
+
+        <h2>6. Engagement and Interaction</h2>
+        <label>Did the training program include sufficient opportunities for interaction and engagement (e.g., discussions, simulations, Q&A)?</label>
+        <select name="engagement" required>
+            <option value="Yes, definitely">Yes, definitely</option>
+            <option value="Yes, somewhat">Yes, somewhat</option>
+            <option value="Neutral">Neutral</option>
+            <option value="No, not really">No, not really</option>
+            <option value="No, not at all">No, not at all</option>
+        </select>
+
+        <h2>7. Real-World Application</h2>
+        <label>How well did the training content prepare you for real-world scenarios?</label>
+        <select name="real_world_application" required>
+            <option value="Very well">Very well</option>
+            <option value="Well">Well</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Poorly">Poorly</option>
+            <option value="Very poorly">Very poorly</option>
+        </select>
+
+        <h2>8. Phishing Simulation Results</h2>
+        <label>If you participated in phishing simulations, how would you rate your ability to recognize and respond to phishing attempts?</label>
+        <select name="phishing_simulation" required>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select>
+
+        <h2>9. Continuous Improvement</h2>
+        <label>How often do you think the training content should be updated to remain relevant?</label>
+        <select name="content_update_frequency" required>
+            <option value="Every 6 months">Every 6 months</option>
+            <option value="Annually">Annually</option>
+            <option value="Every 2 years">Every 2 years</option>
+            <option value="Only when new threats emerge">Only when new threats emerge</option>
+        </select>
+
+        <h2>10. Open-Ended Feedback</h2>
+        <label>What did you find most valuable about the training program?</label>
+        <textarea name="most_valuable"></textarea>
+
+        <h2>11. Areas for Improvement</h2>
+        <label>What improvements would you suggest for future training sessions?</label>
+        <textarea name="improvements"></textarea>
+
+        <h2>12. Additional Comments</h2>
+        <label>Please share any additional comments or feedback you may have about the training program.</label>
+        <textarea name="additional_comments"></textarea>
+
+        <h2>13. Final Question</h2>
+        <label>Would you be willing to participate in a follow-up interview or focus group to provide more detailed feedback?</label>
+        <input type="radio" name="follow_up" value="Yes"> Yes<br>
+        <input type="radio" name="follow_up" value="No"> No<br><br>
+
+        <label>If yes, please provide your email address:</label>
+        <input type="email" name="email">
+
+        <div class="submit-button">
+            <button type="submit" class="button">Submit Survey</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

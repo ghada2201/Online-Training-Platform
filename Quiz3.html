@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Tracking Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .question {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .choices label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .nav-button:hover {
+            background-color: #005f8c;
+        }
+        .submit-button {
+            background-color: #28a745;
+            color: white;
+        }
+        .submit-button:hover {
+            background-color: #218838;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Performance Tracking Quiz</h1>
+
+    <!-- Section 1: Introduction -->
+    <div id="section1" class="section active">
+        <h2>Welcome to the Quiz</h2>
+        <p>This quiz will test your understanding of performance tracking in phishing simulations and the importance of follow-up training. Click "Next" to begin.</p>
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(2)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 2: Questions 1-3 -->
+    <div id="section2" class="section">
+        <div class="question">
+            <h3>1. What is the primary purpose of tracking employee performance in phishing simulations?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q1" value="a"> a) To identify and punish employees who fall for phishing attempts</label>
+                <label><input type="radio" name="q1" value="b"> b) To gather data for reporting to upper management</label>
+                <label><input type="radio" name="q1" value="c"> c) To identify employees who may need additional training and support</label>
+                <label><input type="radio" name="q1" value="d"> d) To increase the number of phishing emails employees receive</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. What should be the primary action taken when an employee repeatedly fails phishing simulations?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q2" value="a"> a) Terminate the employee</label>
+                <label><input type="radio" name="q2" value="b"> b) Provide targeted follow-up training to address gaps in knowledge</label>
+                <label><input type="radio" name="q2" value="c"> c) Ignore the results and continue with regular duties</label>
+                <label><input type="radio" name="q2" value="d"> d) Send more phishing emails to test them further</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. How can tracking performance in phishing simulations improve the overall security posture of an organization?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q3" value="a"> a) By providing data that helps tailor security training to specific needs</label>
+                <label><input type="radio" name="q3" value="b"> b) By making employees aware of their weaknesses</label>
+                <label><input type="radio" name="q3" value="c"> c) By increasing the likelihood of catching phishing emails in real-time</label>
+                <label><input type="radio" name="q3" value="d"> d) All of the above</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(1)">Previous</button>
+            <button class="nav-button" onclick="navigateToSection(3)">Next</button>
+        </div>
+    </div>
+
+    <!-- Section 3: Questions 4-6 -->
+    <div id="section3" class="section">
+        <div class="question">
+            <h3>4. Which of the following is a key metric used to track performance in phishing simulations?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q4" value="a"> a) Number of phishing emails sent to each employee</label>
+                <label><input type="radio" name="q4" value="b"> b) Click rate on phishing links</label>
+                <label><input type="radio" name="q4" value="c"> c) Time spent reading each phishing email</label>
+                <label><input type="radio" name="q4" value="d"> d) Amount of data entered into phishing sites</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Why is it important to provide follow-up training after monitoring phishing simulation performance?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q5" value="a"> a) To ensure that employees feel punished for their mistakes</label>
+                <label><input type="radio" name="q5" value="b"> b) To reinforce learning and address specific weaknesses</label>
+                <label><input type="radio" name="q5" value="c"> c) To reduce the number of phishing simulations conducted</label>
+                <label><input type="radio" name="q5" value="d"> d) To increase the workload of the training department</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. What is a potential outcome of not tracking and addressing poor performance in phishing simulations?</h3>
+            <div class="choices">
+                <label><input type="radio" name="q6" value="a"> a) Employees become more confident in recognizing phishing emails</label>
+                <label><input type="radio" name="q6" value="b"> b) The organization remains vulnerable to phishing attacks</label>
+                <label><input type="radio" name="q6" value="c"> c) Employees stop receiving phishing emails</label>
+                <label><input type="radio" name="q6" value="d"> d) No noticeable effect on security</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="navigateToSection(2)">Previous</button>
+            <button class="submit-button nav-button" onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Section 4: Results -->
+    <div id="section4" class="section">
+        <h2>Quiz Results</h2>
+        <div id="results"></div>
+        <div class="navigation">
+            <button class="nav-button" onclick="location.reload()">Retake Quiz</button>
+        </div>
+<div class="navigation">
+        <a href="module4.html"><button class="button">Start the module again</button></a>
+        <a href="module5.html"><button class="button">Go to next module</button></a>
+        <a href="home.html"><button class="button">Go Back to Home Page</button></a>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        // Function to navigate between sections
+        function navigateToSection(sectionNumber) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('section' + sectionNumber).classList.add('active');
+        }
+
+        // Function to submit the quiz and display results
+        function submitQuiz() {
+            // Correct answers
+            const correctAnswers = {
+                q1: 'c',
+                q2: 'b',
+                q3: 'd',
+                q4: 'b',
+                q5: 'b',
+                q6: 'b'
+            };
+
+            // Calculate the score
+            let score = 0;
+            let totalQuestions = 6;
+            let resultDetails = '';
+
+            for (let question in correctAnswers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
+                    score++;
+                    resultDetails += `<p><strong>${question.toUpperCase()}:</strong> ✔ Correct. Your answer was <strong>${selectedAnswer.value}</strong>.</p>`;
+                } else {
+                    resultDetails += `<p><strong>${question.toUpperCase()}:</strong> ✘ Incorrect. Your answer was <strong>${selectedAnswer ? selectedAnswer.value : 'not answered'}</strong>. The correct answer is <strong>${correctAnswers[question]}</strong>.</p>`;
+                }
+            }
+
+            // Display the result
+            let percentage = (score / totalQuestions) * 100;
+            let resultText = `You scored ${score} out of ${totalQuestions}. That's ${percentage.toFixed(2)}%.`;
+
+            document.getElementById('results').innerHTML = `<p>${resultText}</p>${resultDetails}`;
+
+            // Navigate to results section
+            navigateToSection(4);
+        }
+    </script>
+
+
+</body>
+</html>
+

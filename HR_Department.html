@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: HR Department Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        .section {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .question {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+	.navigation {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            text-align: center;
+	}
+        .navigation:hover {
+            background-color: #005f8c;
+	}
+
+	.button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;	
+        }
+	.button:hover {
+            background-color: #2980b9;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .response {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .example {
+            background-color: #e7f3ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 6px solid #007acc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Module 3: HR Department Training</h1>
+
+    <!-- Objective Section -->
+    <div class="section">
+        <h2>Objective</h2>
+        <p>
+            This module is designed to address the unique social engineering threats that HR professionals face, focusing on the protection of employee data, payroll information, and other sensitive HR records. Given HR's critical role in managing confidential information, this training aims to equip you with the knowledge and skills to identify and mitigate social engineering risks effectively.
+        </p>
+    </div>
+
+    <!-- Scenario 1: Phishing for Employee Data -->
+    <div class="section">
+        <h2>Scenario 1: Phishing for Employee Data</h2>
+        <p>
+            Imagine receiving an email that appears to be from the company’s benefits provider. The email requests a list of employee Social Security numbers to verify benefits eligibility. The message states that the information is needed urgently to ensure there is no disruption in employee benefits.
+        </p>
+        <h3>Objective</h3>
+        <p>
+            The objective of this scenario is to help you identify phishing attempts that seek to collect sensitive employee data under the guise of routine administrative tasks.
+        </p>
+        <h3>How to Recognise Phishing for Employee Data</h3>
+        <p>
+            Phishing attempts targeting employee data often involve:
+        </p>
+        <ul>
+            <li>Emails that appear to come from trusted sources, such as benefits providers, asking for personal employee information.</li>
+            <li>Requests for sensitive data like Social Security numbers, tax information, or personal addresses, often framed as necessary for routine processes.</li>
+            <li>A sense of urgency, pressuring you to provide the information quickly to avoid negative consequences for employees.</li>
+        </ul>
+        <div class="example">
+            <strong>Example:</strong> An email from what appears to be the company’s health benefits provider reads: "Dear HR, we urgently need the Social Security numbers of all employees to verify their eligibility for next month’s benefits. Please send the list by end of day today to avoid any disruption in their coverage."
+        </div>
+        <h3>How to Respond</h3>
+        <ul>
+            <li><strong>Verify the request:</strong> Contact the benefits provider directly using a known and trusted communication method (e.g., phone number on file) to confirm the legitimacy of the request.</li>
+            <li><strong>Check the sender's email:</strong> Carefully inspect the sender’s email address for any discrepancies or unusual domains that might indicate a phishing attempt.</li>
+            <li><strong>Follow company procedures:</strong> Never send sensitive employee information via email without proper verification and encryption. Use secure communication channels as per company policy.</li>
+            <li><strong>Report suspicious emails:</strong> If the request seems suspicious, report the email to your IT/security team immediately and do not respond until the request has been verified.</li>
+        </ul>
+    </div>
+
+    <!-- Scenario 2: Payroll Diversion Scam -->
+    <div class="section">
+        <h2>Scenario 2: Payroll Diversion Scam</h2>
+        <p>
+            An email appears to be from an employee, requesting an urgent change to their direct deposit information. The email claims that the employee is dealing with a personal financial crisis and needs the update to be made before the next payroll cycle to avoid further hardship.
+        </p>
+        <h3>Objective</h3>
+        <p>
+            This scenario focuses on identifying and responding to payroll diversion scams, where attackers impersonate employees to reroute their salaries to fraudulent accounts.
+        </p>
+        <h3>How to Recognise Payroll Diversion Scams</h3>
+        <p>
+            Payroll diversion scams often include:
+        </p>
+        <ul>
+            <li>Urgency in the request, emphasising the need to bypass normal procedures due to an "emergency" or personal crisis.</li>
+            <li>Email addresses that appear legitimate but may contain subtle differences, such as extra characters or domain variations.</li>
+            <li>Requests that lack the usual documentation or verification that would normally be required for payroll changes.</li>
+        </ul>
+        <div class="example">
+            <strong>Example:</strong> An email from what appears to be an employee reads: "Hi, I’m currently dealing with a severe financial crisis and need my direct deposit updated to a new account before the next payroll. Please make this change immediately—I can’t afford any delays."
+        </div>
+        <h3>How to Respond</h3>
+        <ul>
+            <li><strong>Verify the request through alternate communication:</strong> Contact the employee directly using a known phone number or other verified communication method to confirm the request.</li>
+            <li><strong>Inspect the email for inconsistencies:</strong> Carefully review the sender's email address and check for any subtle changes that might indicate a spoofed address.</li>
+            <li><strong>Follow standard procedures:</strong> Adhere to the company’s established protocols for making changes to payroll information, including obtaining proper documentation and approval.</li>
+            <li><strong>Report suspicious requests:</strong> If the request appears to be fraudulent, do not proceed with the change and immediately report the incident to your IT/security team for further investigation.</li>
+        </ul>
+    </div>
+
+    <!-- Scenario 3: Pretexting Attack -->
+    <div class="section">
+        <h2>Scenario 3: Pretexting Attack</h2>
+        <p>
+            You receive a phone call from someone claiming to be a company executive. The caller explains that they need access to employee files for a "confidential project" and requests immediate access to these records. The caller insists that this is a time-sensitive matter and should not be discussed with others.
+        </p>
+        <h3>Objective</h3>
+        <p>
+            This scenario aims to help you recognise pretexting attacks, where attackers create a fabricated scenario to manipulate HR professionals into disclosing confidential employee information.
+        </p>
+        <h3>How to Recognise Pretexting Attacks</h3>
+        <p>
+            Pretexting attacks often involve:
+        </p>
+        <ul>
+            <li>Calls or emails that create a sense of urgency, pressuring you to provide access to sensitive information without following normal verification procedures.</li>
+            <li>Attackers posing as high-level executives or other trusted figures within the company, using authority to bypass standard protocols.</li>
+            <li>A request for sensitive information, such as employee files, that is framed as necessary for a confidential project or urgent matter.</li>
+        </ul>
+        <div class="example">
+            <strong>Example:</strong> A caller says, "This is [Executive Name]. I’m working on a highly confidential project and need access to all employee performance reviews and personal files immediately. This must remain confidential—please do not inform anyone else about this request."
+        </div>
+        <h3>How to Respond</h3>
+        <ul>
+            <li><strong>Verify the identity of the caller:</strong> Politely inform the caller that you will need to verify their identity and the legitimacy of the request. Use a known and trusted communication channel to contact the supposed executive directly.</li>
+            <strong>Follow company protocols:</strong> Ensure that all requests for access to employee files or sensitive information are handled according to the company’s established procedures. This includes obtaining written authorisation and verifying the legitimacy of the request with the appropriate departments.
+            </li>
+            <li><strong>Be cautious of confidentiality claims:</strong> If the caller insists on confidentiality as a reason to bypass standard procedures, treat this as a red flag. True confidential projects will still require proper authorisation and adherence to company protocols.
+            </li>
+            <li><strong>Report the incident:</strong> If the request seems suspicious or unverifiable, do not provide any information. Immediately report the incident to your IT/security team for further investigation. Document the details of the call, including the time, caller ID, and the nature of the request.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Additional Best Practices for HR Department -->
+    <div class="section">
+        <h2>Best Practices for Protecting Employee Data</h2>
+        <p>
+            In addition to the specific responses outlined in the scenarios above, here are some general best practices for HR professionals to protect employee data and sensitive information from social engineering attacks:
+        </p>
+        <ul>
+            <li><strong>Strictly follow verification protocols:</strong> Always verify the identity of individuals requesting sensitive information, especially when the request is made via phone or email. Use known, trusted channels for verification and avoid relying on contact information provided in the suspicious communication.
+            </li>
+            <li><strong>Limit access to sensitive information:</strong> Ensure that access to employee files and personal data is restricted to authorised personnel only. Implement role-based access controls and regularly review who has access to sensitive HR data.
+            </li>
+            <li><strong>Educate and train:</strong> Participate in regular training sessions focused on recognising social engineering attacks. Stay updated on the latest tactics used by attackers and share this knowledge with your HR colleagues.
+            </li>
+            <li><strong>Use secure communication methods:</strong> When sharing sensitive information, use secure communication methods such as encrypted emails or secure file transfer systems. Avoid sending sensitive data over unencrypted or unsecured channels.
+            </li>
+            <li><strong>Maintain a culture of vigilance:</strong> Encourage a culture of vigilance within the HR department. If something feels off or if you have doubts about a request, take the time to verify and consult with your IT/security team.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Role-Playing Exercise Section -->
+    <div class="section">
+        <h2>Role-Playing Exercises</h2>
+        <p>
+            To reinforce the concepts covered in this module, we recommend participating in role-playing exercises. These exercises simulate real-life scenarios, allowing you to practice identifying and responding to social engineering threats in a controlled environment.
+        </p>
+        <h3>Exercise 1: Verifying a Request for Employee Data</h3>
+        <p>
+            Scenario: You receive an email that appears to be from the company’s health benefits provider, requesting employee Social Security numbers for verification purposes.
+        </p>
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Examine the email carefully, checking the sender’s email address, language, and formatting for any red flags.</li>
+            <li>Decide on the appropriate steps to verify the request before taking any action.</li>
+            <li>Simulate contacting the benefits provider using an alternate method to confirm the request.</li>
+            <li>Role-play reporting the incident to your IT/security team if you identify it as a potential threat.</li>
+        </ul>
+
+        <h3>Exercise 2: Handling a Payroll Diversion Request</h3>
+        <p>
+            Scenario: An employee sends an urgent email requesting that their direct deposit information be changed before the next payroll cycle. The employee claims they cannot provide the usual verification due to an emergency.
+        </p>
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Assess the email for any signs of phishing, such as a sense of urgency or unfamiliar sender details.</li>
+            <li>Role-play contacting the employee through a secure and verified communication channel to verify the request.</li>
+            <li>Discuss the importance of following established procedures for payroll changes, even in urgent situations.</li>
+            <li>Consider how to report this request to the IT/security team if it seems suspicious.</li>
+        </ul>
+
+        <h3>Exercise 3: Responding to a Pretexting Call</h3>
+        <p>
+            Scenario: You receive a call from someone claiming to be a senior executive, requesting immediate access to employee records for a confidential project.
+        </p>
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Analyse the caller’s request, focusing on the tone, language, and sense of urgency.</li>
+            <li>Role-play how you would verify the caller’s identity and the legitimacy of the request using established procedures.</li>
+            <li>Discuss the importance of not bypassing standard procedures, even when the caller insists on confidentiality.</li>
+            <li>Simulate reporting the call to the IT/security team if the request appears suspicious.</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="Customised_Scenarios.html"><button class="button">Previous</button></a>
+        <a href="Protecting_Sensitive_Information.html"><button class="button">Next</button></a>
+    </div>
+
+</body>
+</html>

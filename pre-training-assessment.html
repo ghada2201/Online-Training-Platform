@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Training Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question, .result {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-left: 5px solid #3498db;
+        }
+        .question h2, .result h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+        .question p, .result p {
+            margin: 0 0 10px 0;
+        }
+        .answer-options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .answer-options li {
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .submit-button:hover {
+            background-color: #2980b9;
+        }
+        .back-home {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .back-home:hover {
+            background-color: #1a252f;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+        .explanation {
+            margin-top: 5px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pre-Training Assessment</h1>
+
+    <form id="preTrainingAssessmentForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <h2>1. Which of the following best describes social engineering?</h2>
+            <ul class="answer-options">
+                <li><input type="radio" name="q1" value="a"> a) A method used to break into computer systems using technical vulnerabilities.</li>
+                <li><input type="radio" name="q1" value="b"> b) A technique that involves manipulating people into divulging confidential information.</li>
+                <li><input type="radio" name="q1" value="c"> c) A way to enhance the efficiency of engineering processes.</li>
+                <li><input type="radio" name="q1" value="d"> d) None of the above.</li>
+            </ul>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h2>2. Which of the following is a common characteristic of a phishing email?</h2>
+            <ul class="answer-options">
+                <li><input type="radio" name="q2" value="a"> a) The email asks you to click on a link to verify your account.</li>
+                <li><input type="radio" name="q2" value="b"> b) The email is sent from a colleague's official company email address.</li>
+                <li><input type="radio" name="q2" value="c"> c) The email is free from grammatical errors.</li>
+                <li><input type="radio" name="q2" value="d"> d) The email provides detailed information about the sender's background.</li>
+            </ul>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h2>3. What should you do if you receive a suspicious email that appears to be from your bank?</h2>
+            <ul class="answer-options">
+                <li><input type="radio" name="q3" value="a"> a) Click the link in the email to verify your account details.</li>
+                <li><input type="radio" name="q3" value="b"> b) Ignore the email and delete it.</li>
+                <li><input type="radio" name="q3" value="c"> c) Report the email to your IT department or security team.</li>
+                <li><input type="radio" name="q3" value="d"> d) Reply to the email asking for more information.</li>
+            </ul>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h2>4. Which of the following is an example of a social engineering attack?</h2>
+            <ul class="answer-options">
+                <li><input type="radio" name="q4" value="a"> a) Using a brute force attack to crack a password.</li>
+                <li><input type="radio" name="q4" value="b"> b) Creating a fake website to steal login credentials.</li>
+                <li><input type="radio" name="q4" value="c"> c) Sending an email with a malicious attachment.</li>
+                <li><input type="radio" name="q4" value="d"> d) Both b and c.</li>
+            </ul>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h2>5. How likely are you to verify the identity of someone asking for sensitive information over the phone?</h2>
+            <ul class="answer-options">
+                <li><input type="radio" name="q5" value="a"> a) Very unlikely</li>
+                <li><input type="radio" name="q5" value="b"> b) Unlikely</li>
+                <li><input type="radio" name="q5" value="c"> c) Likely</li>
+                <li><input type="radio" name="q5" value="d"> d) Very likely</li>
+            </ul>
+        </div>
+
+        <!-- Question 6: Scenario-based -->
+        <div class="question">
+            <h2>6. Scenario:</h2>
+            <p>You receive an email from what appears to be your IT department, asking you to update your password immediately by clicking a link in the email.</p>
+            <p>What steps should you take to verify the authenticity of the email?</p>
+            <textarea name="q6" rows="4" style="width:100%;"></textarea>
+        </div>
+
+        <!-- Question 7: Scenario-based -->
+        <div class="question">
+            <h2>7. Scenario:</h2>
+            <p>A person you don’t recognise tries to follow you into a secure area of the building, claiming they forgot their ID card.</p>
+            <p>What should you do in this situation?</p>
+            <textarea name="q7" rows="4" style="width:100%;"></textarea>
+        </div>
+
+        <!-- Question 8: Short-answer -->
+        <div class="question">
+            <h2>8. In your own words, describe what social engineering is and why it is a threat to organisations.</h2>
+            <textarea name="q8" rows="4" style="width:100%;"></textarea>
+        </div>
+
+        <!-- Question 9: Short-answer -->
+        <div class="question">
+            <h2>9. List two common indicators that an email might be a phishing attempt.</h2>
+            <textarea name="q9" rows="4" style="width:100%;"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="button" class="submit-button" onclick="showPreTrainingResults()">Submit Assessment</button>
+    </form>
+
+    <div id="preTrainingResultsContainer" style="display: none;">
+        <h1>Results</h1>
+
+        <!-- Result for Question 1 -->
+        <div class="result">
+            <h2>1. Which of the following best describes social engineering?</h2>
+            <p>Your Answer: <span id="preQ1Result"></span></p>
+            <p id="preQ1Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 2 -->
+        <div class="result">
+            <h2>2. Which of the following is a common characteristic of a phishing email?</h2>
+            <p>Your Answer: <span id="preQ2Result"></span></p>
+            <p id="preQ2Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 3 -->
+        <div class="result">
+            <h2>3. What should you do if you receive a suspicious email that appears to be from your bank?</h2>
+            <p>Your Answer: <span id="preQ3Result"></span></p>
+            <p id="preQ3Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 4 -->
+        <div class="result">
+            <h2>4. Which of the following is an example of a social engineering attack?</h2>
+            <p>Your Answer: <span id="preQ4Result"></span></p>
+            <p id="preQ4Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 5 -->
+        <div class="result">
+            <h2>5. How likely are you to verify the identity of someone asking for sensitive information over the phone?</h2>
+            <p>Your Answer: <span id="preQ5Result"></span></p>
+            <p id="preQ5Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 6 -->
+        <div class="result">
+            <h2>6. Scenario:</h2>
+            <p>You receive an email from what appears to be your IT department, asking you to update your password immediately by clicking a link in the email.</p>
+            <p>Your Answer: <span id="preQ6Result"></span></p>
+            <p id="preQ6Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 7 -->
+        <div class="result">
+            <h2>7. Scenario:</h2>
+            <p>A person you don’t recognise tries to follow you into a secure area of the building, claiming they forgot their ID card.</p>
+            <p>Your Answer: <span id="preQ7Result"></span></p>
+            <p id="preQ7Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 8 -->
+        <div class="result">
+            <h2>8. In your own words, describe what social engineering is and why it is a threat to organisations.</h2>
+            <p>Your Answer: <span id="preQ8Result"></span></p>
+            <p id="preQ8Explanation" class="explanation"></p>
+        </div>
+
+        <!-- Result for Question 9 -->
+        <div class="result">
+            <h2>9. List two common indicators that an email might be a phishing attempt.</h2>
+            <p>Your Answer: <span id="preQ9Result"></span></p>
+            <p id="preQ9Explanation" class="explanation"></p>
+        </div>
+
+        <a href="home.html" class="back-home">Go Back to Home Page</a>
+	<a href="module1.html" class="back-home">Start the module1</a>
+
+    </div>
+
+    <script>
+        function showPreTrainingResults() {
+            // Correct answers for Pre-Training Assessment (for multiple choice questions)
+            const answers = {
+                q1: 'b',
+                q2: 'a',
+                q3: 'c',
+                q4: 'd',
+                q5: 'd'
+            };
+
+            // Explanations for each question
+            const explanations = {
+                q1: 'Social engineering involves manipulating people into divulging confidential information.',
+                q2: 'Phishing emails often include urgent requests to verify account details or login information.',
+                q3: 'It\'s important to report suspicious emails to your IT department or security team rather than interacting with them.',
+                q4: 'Both creating a fake website and sending a malicious email attachment are examples of social engineering attacks.',
+                q5: 'You should always verify the identity of someone asking for sensitive information over the phone.'
+            };
+
+            // Loop through the multiple choice questions
+            for (let i = 1; i <= 5; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                const resultSpan = document.getElementById(`preQ${i}Result`);
+                const explanationP = document.getElementById(`preQ${i}Explanation`);
+
+                if (userAnswer) {
+                    const answerValue = userAnswer.value;
+                    if (answerValue === answers[`q${i}`]) {
+                        resultSpan.textContent = 'Correct';
+                        resultSpan.className = 'correct';
+                    } else {
+                        resultSpan.textContent = 'Incorrect';
+                        resultSpan.className = 'incorrect';
+                        explanationP.textContent = `The correct answer is "${answers[`q${i}`]}". ${explanations[`q${i}`]}`;
+                    }
+                } else {
+                    resultSpan.textContent = 'No answer selected';
+                    resultSpan.className = 'incorrect';
+                    explanationP.textContent = `The correct answer is "${answers[`q${i}`]}". ${explanations[`q${i}`]}`;
+                }
+            }
+
+            // Handle the scenario and short-answer questions (for demonstration purposes, we'll just display the answers)
+            for (let i = 6; i <= 9; i++) {
+                const userAnswer = document.querySelector(`textarea[name="q${i}"]`).value;
+                const resultSpan = document.getElementById(`preQ${i}Result`);
+                const explanationP = document.getElementById(`preQ${i}Explanation`);
+
+                resultSpan.textContent = userAnswer ? userAnswer : 'No answer provided';
+                explanationP.textContent = 'Your response has been recorded. Review with the IT department if you need further clarification.';
+            }
+
+            // Hide the form and show the results
+            document.getElementById('preTrainingAssessmentForm').style.display = 'none';
+            document.getElementById('preTrainingResultsContainer').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Customer Service Department Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        .section {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .question {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+	.navigation {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            text-align: center;
+	}
+        .navigation:hover {
+            background-color: #005f8c;
+	}
+
+	.button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;	
+        }
+	.button:hover {
+            background-color: #2980b9;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .response {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .example {
+            background-color: #e7f3ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 6px solid #007acc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Module 3: Customer Service Department Training</h1>
+
+    <!-- Objective Section -->
+    <div class="section">
+        <h2>Objective</h2>
+        <p>
+            This module is tailored for the Customer Service department, focusing on the unique social engineering threats you might encounter while interacting with customers. These scenarios will help you recognise and respond to threats such as vishing (voice phishing), impersonation, and phishing for customer data, ensuring that you can protect both the organisation and its customers effectively.
+        </p>
+    </div>
+
+    <!-- Scenario 1: Vishing (Voice Phishing) -->
+    <div class="section">
+        <h2>Scenario 1: Vishing (Voice Phishing)</h2>
+        <p>
+            Imagine receiving a phone call from someone claiming to be a customer who is unable to access their account. The caller asks you to reset their account password immediately because they are locked out and need access urgently.
+        </p>
+        <h3>Objective</h3>
+        <p>
+            The objective of this scenario is to help you identify and respond to vishing attempts, where attackers use phone calls to manipulate customer service representatives into giving them access to sensitive accounts.
+        </p>
+        <h3>How to Recognise Vishing Attempts</h3>
+        <p>
+            Vishing attempts often involve:
+        </p>
+        <ul>
+            <li>A caller who provides some personal information to gain your trust, but is unable to answer detailed security questions.</li>
+            <li>A sense of urgency, pressuring you to bypass normal security procedures to reset an account or provide access.</li>
+            <li>Inconsistent or unusual language, such as an unfamiliar accent, lack of familiarity with the company’s processes, or odd phrasing.</li>
+        </ul>
+        <div class="example">
+            <strong>Example:</strong> A caller says, "Hi, I’m John Smith. I’ve been locked out of my account and need you to reset my password right away. I’m in a hurry and need access immediately—can you just help me out this one time?"
+        </div>
+        <h3>How to Respond</h3>
+        <ul>
+            <li><strong>Verify the caller’s identity:</strong> Politely inform the caller that you must ask some security questions to verify their identity before making any changes to the account.</li>
+            <li><strong>Follow company protocols:</strong> Adhere to established security procedures, such as asking for specific personal information or security questions that only the legitimate customer would know.</li>
+            <li><strong>Document the call:</strong> If the caller cannot provide the necessary information, do not proceed with the request. Document the call details, including the time, caller ID, and the nature of the request, and report the incident to your IT/security team.</li>
+            <li><strong>Encourage proper channel use:</strong> Politely suggest that the customer use the official account recovery process, such as using the online portal or contacting support via a secure method.</li>
+        </ul>
+    </div>
+
+    <!-- Scenario 2: Impersonation Attack -->
+    <div class="section">
+        <h2>Scenario 2: Impersonation Attack</h2>
+        <p>
+            You receive an email from someone claiming to be a customer, asking to update their account information, including their email address and contact details. The email appears legitimate but includes a new email domain you haven’t seen before.
+        </p>
+        <h3>Objective</h3>
+        <p>
+            This scenario is designed to help you recognise and respond to impersonation attacks, where attackers pose as legitimate customers to gain control over accounts or access sensitive information.
+        </p>
+        <h3>How to Recognise Impersonation Attacks</h3>
+        <p>
+            Impersonation attacks typically involve:
+        </p>
+        <ul>
+            <li>Emails that appear to be from a legitimate customer but include changes in contact details, such as a new email address or phone number.</li>
+            <li>Requests for updates to critical account information without the usual verification process.</li>
+            <li>Language that is slightly off, such as unusual phrasing or spelling errors, which might indicate that the email is not from the legitimate customer.</li>
+        </ul>
+        <div class="example">
+            <strong>Example:</strong> An email reads, "Hello, I need to update my email address and phone number on my account. Please change it to john.doe@newdomain.com and 123-456-7890 as soon as possible. Thanks!"
+        </div>
+        <h3>How to Respond</h3>
+        <ul>
+            <li><strong>Verify the request through known channels:</strong> Contact the customer using their original email address or phone number on file to verify the request. Do not make changes based solely on the information provided in the email.</li>
+            <li><strong>Check for inconsistencies:</strong> Review the email carefully for any signs of impersonation, such as unusual language, a new or unfamiliar domain, or an urgent tone.</li>
+            <li><strong>Follow standard procedures:</strong> Ensure that any requests to update critical account information go through the proper verification process, including confirmation from the customer through a secure channel.</li>
+            <li><strong>Report suspicious activity:</strong> If the request seems suspicious or unverifiable, do not proceed with the changes and immediately report the incident to your IT/security team for further investigation.</li>
+        </ul>
+    </div>
+
+    <!-- Scenario 3: Phishing for Customer Data -->
+    <div class="section">
+        <h2>Scenario 3: Phishing for Customer Data</h2>
+        <p>
+            You receive an email that appears to be from a senior manager within your company, asking you to provide a list of customer email addresses and phone numbers for a "special project." The request is marked as urgent and stresses that the information must be sent by the end of the day.
+        </p>
+        <h3>Objective</h3>
+        <p>
+            This scenario aims to help you identify phishing attempts that target customer data, often disguised as internal requests from management.
+        </p>
+        <h3>How to Recognise Phishing for Customer Data</h3>
+        <p>
+            Phishing attempts for customer data may involve:
+        </p>
+        <ul>
+            <li>Emails that appear to come from senior management or other trusted internal sources, requesting access to customer information.</li>
+            <li>An urgent tone, pressuring you to provide the requested information quickly without following normal procedures.</li>
+            <li>Requests for large amounts of customer data, such as email addresses, phone numbers, or account details, which are unusual or outside of your typical job duties.</li>
+        </ul>
+        <div class="example">
+            <strong>Example:</strong> An email from a supposed senior manager reads, "I need you to send me the email addresses and phone numbers of all customers in our database for a special project. This is urgent—please send it by the end of the day."
+        </div>
+        <h3>How to Respond</h3>
+        <ul>
+            <strong>Verify the request through a different channel:</strong> Contact the senior manager or the person who supposedly sent the email through a different, trusted communication method (e.g., phone call, direct message) to confirm the legitimacy of the request.
+            </li>
+            <li><strong>Check for inconsistencies:</strong> Carefully review the email for any red flags, such as unusual language, a sense of urgency that bypasses normal procedures, or an unfamiliar email address/domain.
+            </li>
+            <li><strong>Follow data protection policies:</strong> Ensure that any request for customer data follows the company’s data protection policies. This includes requiring proper authorisation and ensuring that the data is only shared through secure, approved channels.
+            </li>
+            <li><strong>Report suspicious emails:</strong> If the request seems suspicious or unverifiable, do not provide the requested information. Immediately report the email to your IT/security team for further investigation.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Additional Best Practices for Customer Service Department -->
+    <div class="section">
+        <h2>Best Practices for Protecting Customer Data</h2>
+        <p>
+            In addition to the specific responses outlined in the scenarios above, here are some general best practices for customer service professionals to protect customer data and respond effectively to potential social engineering threats:
+        </p>
+        <ul>
+            <li><strong>Always verify:</strong> Never take action on requests for customer information or account changes without verifying the legitimacy of the request through known, trusted channels. This is especially important when the request involves sensitive data or bypasses standard procedures.
+            </li>
+            <li><strong>Follow strict data protection policies:</strong> Adhere to the company’s data protection policies when handling customer information. Ensure that any data shared is done so through secure, approved channels and only after proper authorisation has been obtained.
+            </li>
+            <li><strong>Be aware of common tactics:</strong> Stay informed about common social engineering tactics, such as vishing, phishing, and impersonation, that target customer service representatives. Regular training and updates can help you stay vigilant against evolving threats.
+            </li>
+            <li><strong>Limit access to customer data:</strong> Ensure that access to customer data is restricted to authorised personnel only. Implement role-based access controls and regularly review who has access to sensitive customer information.
+            </li>
+            <li><strong>Maintain a culture of vigilance:</strong> Encourage a culture of vigilance within the customer service department. If something feels off or if you have doubts about a request, take the time to verify and consult with your IT/security team before proceeding.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Role-Playing Exercise Section -->
+    <div class="section">
+        <h2>Role-Playing Exercises</h2>
+        <p>
+            To reinforce the concepts covered in this module, we recommend participating in role-playing exercises. These exercises simulate real-life scenarios, allowing you to practice identifying and responding to social engineering threats in a controlled environment.
+        </p>
+        <h3>Exercise 1: Responding to a Vishing Call</h3>
+        <p>
+            Scenario: You receive a phone call from someone claiming to be a customer who is locked out of their account and needs their password reset immediately.
+        </p>
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Analyse the caller’s request, focusing on the urgency and the information they provide to verify their identity.</li>
+            <li>Role-play how you would verify the caller’s identity using established security questions or other authentication methods.</li>
+            <li>Discuss the importance of following company protocols and not bypassing security measures, even when the caller insists on urgency.</li>
+            <li>Simulate documenting the call details and reporting the incident to the IT/security team if the caller cannot provide the necessary verification.</li>
+        </ul>
+
+        <h3>Exercise 2: Handling an Impersonation Request</h3>
+        <p>
+            Scenario: You receive an email from someone claiming to be a customer, asking to update their account information, including their email address and phone number.
+        </p>
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Assess the email for any signs of impersonation, such as a new or unfamiliar domain, unusual language, or an urgent tone.</li>
+            <li>Role-play how you would verify the request by contacting the customer using the original contact information on file.</li>
+            <li>Discuss the importance of not making any changes to account information without proper verification and authorisation.</li>
+            <li>Simulate reporting the incident to the IT/security team if the request seems suspicious.</li>
+        </ul>
+
+        <h3>Exercise 3: Verifying a Request for Customer Data</h3>
+        <p>
+            Scenario: You receive an email that appears to be from a senior manager, asking you to provide a list of customer email addresses and phone numbers for a "special project."
+        </p>
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Examine the email for any red flags, such as an urgent tone, unusual language, or a request that bypasses normal procedures.</li>
+            <li>Role-play how you would verify the request by contacting the senior manager through a different communication channel.</li>
+            <li>Discuss the importance of adhering to data protection policies and not sharing customer information without proper authorisation.</li>
+            <li>Simulate reporting the email to the IT/security team if the request appears suspicious.</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="Customised_Scenarios.html"><button class="button">Previous</button></a>
+        <a href="Protecting_Sensitive_Information.html"><button class="button">Next</button></a>
+    </div>
+
+
+</body>
+</html>
